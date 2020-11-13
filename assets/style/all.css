@@ -397,6 +397,9 @@ img {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse; }
+    .footer .legal-block a {
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
     .footer .legal-block .legal-line {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
