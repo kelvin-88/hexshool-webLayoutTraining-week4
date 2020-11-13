@@ -411,8 +411,6 @@ img {
     .footer .legal-block img {
       display: block;
       margin-right: 0;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
       width: 40px; }
     .footer .legal-block .legal-words ul {
       -webkit-box-orient: vertical;
