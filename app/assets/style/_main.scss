@@ -14,6 +14,11 @@ img {
   font-weight: 400;
 }
 
+.roboto-medium {
+  font-family: 'Roboto', sans-serif;  
+  font-weight: 500;
+}
+
 .roboto-black-italic {
   font-family: 'Roboto', sans-serif;  
   font-style: italic;
@@ -96,7 +101,7 @@ img {
 .content {
   .banner {
     //background: url("https://hexschool.github.io/webLayoutTraining1st/week3/qa.png") no-repeat center;
-    max-width: 1920;
+    // max-width: 1920px;
 
     h2 {
       font-size: 64px;
