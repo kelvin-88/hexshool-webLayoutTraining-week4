@@ -24,6 +24,12 @@ $series-color: #650300;
     flex-direction: column;
     align-items: center;
   }
+
+  .banner {
+    height: 840px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   
   .series-banner {
     height: 100%;
@@ -97,8 +103,17 @@ $series-color: #650300;
   }
 
   .series-details {
+    .series-photo-content {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+
     width: 100%;
     li {
+      .series-icon-white {
+        display: none;
+      }
       display: flex;
       align-self: start;
       align-items: center;
@@ -364,8 +379,21 @@ $series-color: #650300;
     }
     
     .series-info {
+      .wrap {
+        width: 100%;
+      }
+      
       ul > li {
+        // align-self: flex-start;
         width: 48%;
+
+        &:nth-child(1){
+          order: 2;
+        }
+        &:nth-child(4){
+          order: 2;
+        }
+
         h5 {
           margin-top: 16px;
         }
@@ -374,8 +402,10 @@ $series-color: #650300;
           height: 80px;
         }
         p {
-          max-width: 250px;
-        }    
+          line-height: 24px;
+          max-width: 237px;
+        }
+
       }
     }
 
@@ -399,6 +429,7 @@ $series-color: #650300;
         margin-bottom: 8px;
         .series-photo {
           width: 390px;
+          max-width: 50%;
         }
         .series-icon {
            width: 32px;
@@ -446,6 +477,109 @@ $series-color: #650300;
   }
 
   @media (max-width:576px) { 
+    .wrap, .container {
+      padding: 0 15px;
+    }
+
+
+
+    .banner {
+      //width: 200px;
+      height: 394px;
+      background-size: cover;
+    }
+    
+    h2 {
+      font-size: 24px;
+    }
+
+    h5 {
+      font-size: 20px;
+    }
+
+    .series-banner {
+      margin-left: 72px;
+    }
+
+    .banner {
+      h2 {
+        font-size: 32px;
+      }
+      h4 {
+       font-size: 16px;
+      }
+    }
+
+    .series-info {    
+      ul > li {
+        width: 100%;
+
+        
+        h5 {
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    .series-details {
+      //  li {
+      //     background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-1.png");
+      //     background-repeat: no-repeat;
+      //     background-position: center;
+      //     width: 100%;
+      //   }
+      h3 {
+        color: white;
+      }
+
+      li {        
+        .series-photo {
+        // display: none;
+          width: 100%;
+          max-width: 100%;
+          margin-right: 0;
+        }
+        .series-photo-content {          
+          width: 80%;
+          text-align: center;
+          position: absolute;
+          //justify-content: center;
+          align-content: center;
+          // height: 50%;          
+        }
+        .series-icon {
+          display: none;
+        }
+        .series-icon-white {
+          display: inline;
+        }
+        img {
+          src: "https://hexschool.github.io/webLayoutTraining1st/week3/icon-sun.svg";
+        }
+      }
+    }
+
+    .series-frame {
+      ul {
+        flex-wrap: wrap;
+        li {
+          width: 100%;
+          height: 284px;
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    .series-frame1 {
+      margin-right: 0;
+    }
+
+    .series-recommendations {
+      li {
+        width: 100%;
+      }
+    }
+
   }
 
 }
